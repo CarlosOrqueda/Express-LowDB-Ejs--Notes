@@ -1,0 +1,27 @@
+{
+  "name": "express-lowdb-ejs--notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js --exec babel-node --ignore db.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "lowdb": "^1.0.0",
+    "morgan": "^1.9.1",
+    "uuid": "^7.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.6",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.6",
+    "nodemon": "^2.0.2"
+  }
+}

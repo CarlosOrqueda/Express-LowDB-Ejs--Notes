@@ -1,0 +1,16 @@
+{
+  "entries": [
+    {
+      "id": "3e145e8c-11ec-4d01-a0df-fed366de858c",
+      "title": "Test 1",
+      "body": "Test 1",
+      "published": "2020-03-03T16:34:22.128Z"
+    },
+    {
+      "id": "ee5d6435-790a-4f6d-9c5c-12fadfaf353a",
+      "title": "Test 2",
+      "body": "Test 2",
+      "published": "2020-03-03T15:32:10.753Z"
+    }
+  ]
+}

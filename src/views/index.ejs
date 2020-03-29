@@ -1,0 +1,31 @@
+<%- include('partials/header') %>
+
+<%if (entries.length) { %>
+
+    <div class="col-md-4 offset-md-4">
+        <% entries.forEach( entry => { %>
+
+            <div class="card my-2">
+                <div class="card-header bg-primary text-white">
+                    <p><%= entry.published %></p>
+                </div>
+                <div class="card-body">
+                    <p><%= entry.title %></p>
+                    <p><%= entry.body %></p>
+                </div>
+
+                <a href="/update-entry/<%= entry.id %>" class="btn btn-primary text-white btn-block">Update</a>
+                <a href="/delete-entry/<%= entry.id %>" class="btn btn-primary text-white btn-block">Delete</a>
+
+            </div>
+    
+        <% }) %>
+    </div>
+
+<% } else { %>
+
+    <p>No entries! <a href="/new-entry">Add one!</a></p>
+
+<% } %>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,42 @@
+<%- include('partials/header') %>
+
+<div class="col-md-4 offset-md-4">
+    <h2 class="text-center">Update Entry</h2>
+
+    <form method="POST" action="/update-entry/<%= entry.id %>">
+
+        <%if (entry.updatePublished) { %>
+
+        <div class="form-group">
+            <label for="published">published: <%= entry.updatePublished %></label>
+        </div>
+
+        <% } else { %>
+
+            <div class="form-group">
+                <label for="published">published: <%= entry.published %></label>
+            </div>
+
+        <% } %>
+
+        <div class="form-group">
+            <label for="published">published: <%= entry.date %></label>
+        </div>
+
+        <div class="form-group">
+            <label for="title">Title: <%= entry.title %></label>
+            <input type="text" name="title" id="title" class="form-control" placeholder="Entry a New Title" required>
+        </div>
+
+        <div class="form-group">
+            <label for="body">Entry Text: <%= entry.body %></label>
+            <textarea name="body" id="body" rows="3" required class="form-control" placeholder="Entry a New Description"></textarea>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Update Entry" class="btn btn-primary">
+        </div>
+    </form>
+</div>
+
+<%- include('partials/footer') %>
